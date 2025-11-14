@@ -462,12 +462,150 @@ a:hover {
   margin: 1.5rem 0;
 }
 
+/* Product Grid (keeping old name for compatibility) */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.product-card {
+  padding: 1rem 1.2rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 120, 212, 0.4);
+  background: radial-gradient(circle at top left, rgba(0, 120, 212, 0.12), rgba(15, 20, 25, 0.96));
+}
+
+.product-card h3 {
+  color: #00bcf2;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.product-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #cbd5f5;
+}
+
+/* Partners Grid */
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.partner-card {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 188, 242, 0.3);
+  background: rgba(0, 120, 212, 0.08);
+}
+
+.partner-card h3 {
+  color: #00bcf2;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.partner-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* Device Concept */
+
+.device-concept {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.device-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device-shape {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0078d4, #00bcf2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 60px rgba(0, 120, 212, 0.4);
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+.device-description h3 {
+  margin-top: 0;
+}
+
+/* Special boxes */
+
+.example-box {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 188, 242, 0.4);
+  background: radial-gradient(circle at top left, rgba(0, 188, 242, 0.12), rgba(15, 20, 25, 0.98));
+}
+
+.example-box h3 {
+  color: #00bcf2;
+  margin-top: 0;
+}
+
+.tech-stack {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 120, 212, 0.4);
+  background: rgba(0, 120, 212, 0.08);
+}
+
+.vision-box {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border: 2px solid rgba(0, 120, 212, 0.6);
+  background: radial-gradient(circle at top, rgba(0, 120, 212, 0.2), rgba(15, 20, 25, 0.98));
+  text-align: center;
+}
+
+.vision-box h2 {
+  color: #00bcf2;
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.vision-box p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
 @media (max-width: 900px) {
   .platforms-grid {
     grid-template-columns: 1fr;
   }
   
   .stats-grid-large {
+    grid-template-columns: 1fr;
+  }
+  
+  .device-concept {
     grid-template-columns: 1fr;
   }
 }
